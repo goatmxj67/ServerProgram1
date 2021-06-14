@@ -1,0 +1,40 @@
+package controller;
+
+import service.member.MemberService;
+import service.member.SelectListService;
+
+public class ServiceMapper {
+
+	private static ServiceMapper instance = new ServiceMapper();
+	private ServiceMapper() {}
+	public static ServiceMapper getInstance() {
+		if (instance == null) {
+			instance = new ServiceMapper();
+		}
+		return instance;
+	}
+	
+	public MemberService getService(String svc) {
+		MemberService service = null;
+		switch (svc) {
+		case "list.do":
+			service = new SelectListService();
+			break;
+		case "login.do":
+			// service = new SelectListService();
+			break;
+		}
+		
+		return service;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
