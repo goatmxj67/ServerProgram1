@@ -1,10 +1,14 @@
 package controller;
 
-import service.member.DeleteService;
+import service.member.JoinPageService;
+import service.member.JoinService;
+import service.member.LeaveService;
+import service.member.LoginPageService;
 import service.member.LoginService;
-import service.member.ManagerService;
+import service.member.LogoutService;
+import service.member.MemberListService;
 import service.member.MemberService;
-import service.member.SelectListService;
+import service.member.UpdateService;
 
 public class ServiceMapper {
 
@@ -17,33 +21,36 @@ public class ServiceMapper {
 		return instance;
 	}
 	
-	public MemberService getService(String svc) {
+	public MemberService getService(String command) {
 		MemberService service = null;
-		switch (svc) {
+		switch (command) {
 		case "list.do":
-			service = new SelectListService();
+			service = new MemberListService();
+			break;
+		case "loginPage.do":
+			service = new LoginPageService();
 			break;
 		case "login.do":
 			service = new LoginService();
 			break;
-		case "manager.do":
-			service = new ManagerService();
+		case "logout.do":
+			service = new LogoutService();
+			break;
+		case "joinPage.do":
+			service = new JoinPageService();
+			break;
+		case "join.do":
+			service = new JoinService();
+			break;
+		case "update.do":
+			service = new UpdateService();
 			break;
 		case "delete.do":
-			service = new DeleteService();
+			service = new LeaveService();
 			break;
 		}
 		
 		return service;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

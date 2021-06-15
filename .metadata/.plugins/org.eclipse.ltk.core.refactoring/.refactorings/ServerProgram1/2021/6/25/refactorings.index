@@ -1,3 +1,14 @@
 1623648773581	Delete element
 1623652359574	Delete element
 1623658709340	Delete element
+1623719443195	Rename type 'SelectListService'
+1623719564594	Rename type 'LoginService'
+1623719706320	Delete element
+1623719828007	Rename type 'DeleteService'
+1623724337470	Delete element
+1623732875661	Move 'login.jsp' to 'WebContent'
+1623732879128	Move 'index.jsp' to 'member'
+1623733008993	Move 'index.jsp' to 'WebContent'
+1623733012548	Move 'login.jsp' to 'member'
+1623733364617	Move 4 resources to 'WebContent'
+1623733372289	Delete element

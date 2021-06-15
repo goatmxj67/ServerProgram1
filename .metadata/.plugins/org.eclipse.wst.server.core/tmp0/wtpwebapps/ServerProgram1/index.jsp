@@ -5,8 +5,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
+	<script>
+		location.href = '/ServerProgram1/loginPage.do';
+	</script>
 </head>
 <body>
-	<a href="/ServerProgram1/list.do">회원 목록</a>
+
 </body>
 </html>

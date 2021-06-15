@@ -2,28 +2,17 @@ package dto;
 
 public class MemberDTO {
 
-	private long no;
+	private int no;
 	private String id;
 	private String name;
 	private String grade;
-	private long point;
+	private int point;
 	
-	public MemberDTO(){}
-
-	public MemberDTO(long no, String id, String name, String grade, long point) {
-		super();
-		this.no = no;
-		this.id = id;
-		this.name = name;
-		this.grade = grade;
-		this.point = point;
-	}
-
-	public long getNo() {
+	public int getNo() {
 		return no;
 	}
 
-	public void setNo(long no) {
+	public void setNo(int no) {
 		this.no = no;
 	}
 
@@ -51,11 +40,11 @@ public class MemberDTO {
 		this.grade = grade;
 	}
 
-	public long getPoint() {
+	public int getPoint() {
 		return point;
 	}
 
-	public void setPoint(long point) {
+	public void setPoint(int point) {
 		this.point = point;
 	}
 	

@@ -26,9 +26,9 @@ public class MemberController extends HttpServlet {
 		response.setContentType("text/html; charset=utf-8");
 		
 		String[] arr = request.getRequestURI().split("/");
-		String svc = arr[arr.length - 1];  
+		String command = arr[arr.length - 1];  
 		
-		MemberService service = ServiceMapper.getInstance().getService(svc);
+		MemberService service = ServiceMapper.getInstance().getService(command);
 		ModelAndView mav = null;
 		if (service != null) {
 			mav = service.execute(request, response);
