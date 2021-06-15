@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 	<script>
+		// location.href = '/ServerProgram1/list.do';
 		location.href = '/ServerProgram1/loginPage.do';
 	</script>
 </head>
