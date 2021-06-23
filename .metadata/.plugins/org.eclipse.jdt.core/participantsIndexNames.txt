@@ -3,3 +3,5 @@ C:\spring0303\jspstudy\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearc
 \ServerProgram1\src
 C:\spring0303\jspstudy\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\88188374.index
 \ServerProgram1\src
+C:\spring0303\jspstudy\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3680023642.index
+\InterfaceProgram1\src
